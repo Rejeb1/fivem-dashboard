@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Professional dashboard design system for 5M breakdown tracking
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -17,8 +17,11 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Professional blue primary */
+    --primary: 220 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 220 100% 95%;
+    --primary-dark: 220 100% 35%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -34,7 +37,28 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 220 100% 50%;
+
+    /* 5M Method Colors */
+    --method: 200 100% 45%;     /* Methode - Blue */
+    --milieu: 150 60% 40%;      /* Milieu - Green */
+    --matiere: 40 90% 50%;      /* Matière - Orange */
+    --main-oeuvre: 270 70% 50%; /* Main-d'œuvre - Purple */
+    --moyens: 10 85% 55%;       /* Moyens - Red */
+    --false-alert: 0 0% 60%;    /* False alert - Gray */
+
+    /* Chart colors */
+    --chart-1: var(--method);
+    --chart-2: var(--milieu);
+    --chart-3: var(--matiere);
+    --chart-4: var(--main-oeuvre);
+    --chart-5: var(--moyens);
+
+    /* Dashboard specific */
+    --dashboard-sidebar: 220 15% 8%;
+    --dashboard-sidebar-foreground: 0 0% 95%;
+    --dashboard-header: 0 0% 100%;
+    --dashboard-content: 0 0% 98%;
 
     --radius: 0.5rem;
 
@@ -65,8 +89,10 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 220 100% 60%;
+    --primary-foreground: 0 0% 0%;
+    --primary-light: 220 100% 15%;
+    --primary-dark: 220 100% 70%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -82,7 +108,13 @@ All colors MUST be HSL.
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --ring: 220 100% 60%;
+
+    /* Dashboard dark mode */
+    --dashboard-sidebar: 222.2 84% 3%;
+    --dashboard-sidebar-foreground: 210 40% 98%;
+    --dashboard-header: 222.2 84% 4.9%;
+    --dashboard-content: 222.2 84% 4.9%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

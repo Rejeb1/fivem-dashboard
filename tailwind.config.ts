@@ -26,7 +26,9 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					light: 'hsl(var(--primary-light))',
+					dark: 'hsl(var(--primary-dark))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -51,6 +53,28 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				// 5M Method specific colors
+				method: 'hsl(var(--method))',
+				milieu: 'hsl(var(--milieu))',
+				matiere: 'hsl(var(--matiere))',
+				'main-oeuvre': 'hsl(var(--main-oeuvre))',
+				moyens: 'hsl(var(--moyens))',
+				'false-alert': 'hsl(var(--false-alert))',
+				// Chart colors
+				chart: {
+					'1': 'hsl(var(--chart-1))',
+					'2': 'hsl(var(--chart-2))',
+					'3': 'hsl(var(--chart-3))',
+					'4': 'hsl(var(--chart-4))',
+					'5': 'hsl(var(--chart-5))',
+				},
+				// Dashboard specific
+				dashboard: {
+					sidebar: 'hsl(var(--dashboard-sidebar))',
+					'sidebar-foreground': 'hsl(var(--dashboard-sidebar-foreground))',
+					header: 'hsl(var(--dashboard-header))',
+					content: 'hsl(var(--dashboard-content))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
